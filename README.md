@@ -1,9 +1,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)<br />
 # EPIHAP
 This is a computing tool for genomic prediction of quantitative traits using epistasis and haplotype effects.<br />
-## Contents
-* [OVERVIEW](#overview)
-## OVERVIEW
+# Overview
 **EPIHAP** is an open-source software program written in C++ for genomic best linear unbiased prediction (GBLUP) methods, which are used for genomic prediction and heritability estimation. By using genome-wide SNPs, this tool can perform multifactorial models to estimate genetic values and heritability for the trait of interest. These models can include any or all types of the following effects: single SNP additive (A) and dominance (D) effects, epistatic effects (including AA,AD,DD,AAA,AAD,ADD,DDD,AA-intra,AA-inter,AD-intra,AD-inter,DD-intra, and DD-inter), and haplotype additive (HA) effects. Two methods can be implemented in EPIHAP to calculate genetic relationship matrices (GRMs) for epistatic effects. One is approximate genomic epistasis relationship matrices (AGERM) and the other exact genomic epistasis relationship matrices (EGERM). By providing property model parameters, EPIHAP also allows estimation of the partitioned pairwise epistatic effects — that are divided into intra-chromosomes and inter-chromosomes. Lastly, the variance components for these types of effects are optimized using genome-based restricted maximum likelihood (GREML) algorithms including EM-REML and AI-REML.
 # Installation
 The compiled program is available here. If the users want to compile it by themselves, please make sure the intel and mkl library had been installed on the computer.
